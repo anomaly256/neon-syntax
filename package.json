@@ -1,0 +1,11 @@
+{
+  "name": "neon-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Neon syntax theme for Atom inspired by and based on the Farzher Neon Sublime Text 2/3 theme, using CSS text-shadow to implement the glow effect",
+  "repository": "https://github.com/anomaly256/neon-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

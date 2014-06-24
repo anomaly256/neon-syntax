@@ -1,0 +1,189 @@
+@import "syntax-variables";
+
+.editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+  -webkit-filter: contrast(@contrast);
+  -webkit-filter: saturate(@saturation);
+}
+
+.editor .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+.editor .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+.editor .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+.editor .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+.editor .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+.editor .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+.editor .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+.editor .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+.editor.is-focused .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+.editor.is-focused .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
+  background-color: #282828;
+}
+
+.editor .wrap-guide {
+  color: #282828;
+  background-color: #282828;
+  width: 1px;
+}
+
+.comment {
+  font-weight: bold;
+  font-style: italic;
+  color: #a1784c;
+  text-shadow: 0px 0px @blur rgba(161, 120, 76, @opacity);
+}
+
+.string {
+  color: rgba(170, 175, 235, 0.93);
+  text-shadow: 0px 0px @blur rgba(170, 175, 219, @opacity);
+}
+
+.constant.numeric {
+  color: rgba(143, 194, 187, 0.73);
+  text-shadow: 0px 0px @blur rgba(119, 194, 187, @opacity);
+}
+
+.constant.character, .constant.other {
+  color: rgba(34, 255, 153, 0.87);
+  text-shadow: 0px 0px @blur rgba(34, 200, 153, @opacity);
+}
+
+.constant.language {
+  color: #bDbe82;
+  text-shadow: 0px 0px @blur rgba(189, 190, 130, @opacity);
+}
+
+.storage {
+  color: rgba(139, 108, 207, 1);
+  text-shadow: 0px 0px @blur rgba(139, 93, 223, @opacity);
+}
+
+.meta.function-call {
+  color: rgba(203, 175, 108, 1);
+  text-shadow: 0px 0px @blur rgba(203, 175, 108, @opacity);
+}
+
+.entity.name.function {
+  color: rgba(18, 255, 169, 0.97);
+  text-shadow: 0px 0px @blur rgba(34, 255, 169, @opacity);
+}
+
+.support.function {
+  color: #ADAeB2;
+  text-shadow: 0px 0px @blur rgba(189, 190, 130, @opacity);
+}
+
+.entity.name.function.misc {
+  color: #E3E4A9;
+  text-shadow: 0px 0px @blur rgba(227, 228, 169, @opacity);
+}
+
+.entity.name.function.predicate {
+  color: #A5DF93;
+  text-shadow: 0px 0px @blur rgba(165, 223, 147, @opacity);
+}
+
+.entity.name.function.io {
+  color: #DFB3AC;
+  text-shadow: 0px 0px @blur rgba(223, 179, 172, @opacity);
+}
+
+.variable.other.external-symbol {
+  color: #BBDFDD;
+  text-shadow: 0px 0px @blur rgba(187, 223, 221, @opacity);
+}
+
+.variable.language, .variable.other {
+  color: #3aafff;
+  text-shadow: 0px 0px @blur rgba(58, 175, 255, @opacity);
+}
+
+.variable.parameter {
+  color: #33b6a9;
+  text-shadow: 0px 0px @blur rgba(5, 214, 249, @opacity);
+}
+
+.keyword {
+  color: #bB7Dbf;
+  text-shadow: 0px 0px @blur rgba(155, 159, 253, @opacity);
+}
+
+.entity.name.class {
+  color: #B998DF;
+  text-shadow: 0px 0px @blur rgba(185, 152, 223, @opacity);
+}
+
+.entity.name.structure {
+  color: rgba(34, 255, 153, 0.87);
+  text-shadow: 0px 0px @blur rgba(185, 152, 223, @opacity);
+}
+
+.entity.name.type {
+  color: rgba(175, 119, 169, 0.93);
+  text-shadow: 0px 0px @blur rgba(175, 119, 169, @opacity);
+}
+
+.meta.class, .entity.name.class, .entity.name.type.class {
+  color: #ff4377;
+  text-shadow: 0px 0px @blur rgba(255, 51, 153, @opacity);
+}
+
+.support.class {
+  color: rgba(239, 106, 167, 0.87);
+  text-shadow: 0px 0px @blur rgba(239, 106, 167, @opacity);
+}
+
+.invalid {
+  color: #DFDFD5;
+  text-shadow: 0px 0px @blur #CC1B27;
+}
+
+.string .source {
+  font-style: italic;
+  color: rgba(51, 153, 255, 1);
+  text-shadow: 0px 0px @blur rgba(0, 153, 255, @opacity);
+}
+
+.entity.name.tag {
+  color: #49a6d2;
+  text-shadow: 0px 0px @blur rgba(73, 166, 210, @opacity);
+}
+
+.entity.other.attribute-name {
+  color: rgba(73, 134, 194, 0.8);
+  text-shadow: 0px 0px @blur rgba(73, 134, 194, @opacity);
+}
