@@ -1,63 +1,57 @@
 @import "syntax-variables";
 
-.editor {
+.editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
   -webkit-filter: contrast(@contrast);
   -webkit-filter: saturate(@saturation);
 }
 
-.editor .gutter {
+.editor .gutter, :host .gutter {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
 }
 
-.editor .gutter .line-number.cursor-line {
+.editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-.editor .gutter .line-number.cursor-line-no-selection {
+.editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
-.editor .wrap-guide {
+.editor .wrap-guide, :host .wrap-guide {
   color: @syntax-wrap-guide-color;
 }
 
-.editor .indent-guide {
+.editor .indent-guide, :host .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-.editor .invisible-character {
+.editor .invisible-character, :host .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-.editor .search-results .marker .region {
+.editor .search-results .marker .region, :host .search-results .marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-.editor .search-results .marker.current-result .region {
+.editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-.editor.is-focused .cursor {
+.editor.is-focused .cursor, :host.is-focused .cursor {
   border-color: @syntax-cursor-color;
 }
 
-.editor.is-focused .selection .region {
+.editor.is-focused .selection .region, :host.is-focused .selection .region {
   background-color: @syntax-selection-color;
 }
 
-.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
+.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line, :host.is-focused .line-number.cursor-line-no-selection, :host.is-focused .line.cursor-line {
   background-color: #282828;
-}
-
-.editor .wrap-guide {
-  color: #282828;
-  background-color: #282828;
-  width: 1px;
 }
 
 .comment {
