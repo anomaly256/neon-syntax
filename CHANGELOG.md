@@ -1,3 +1,7 @@
+## 0.3.1
+* Updated CSS for compatibility with Shadow DOM
+* Tweaked colours of invisibles / indent guide / wrap guide to suite editor background
+
 ## 0.3.0
 * Added markdown support, thanks @EmberQuill
 
