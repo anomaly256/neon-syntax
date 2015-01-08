@@ -1,3 +1,6 @@
+## 0.3.2
+* Fix issue with text selection when using Shadow DOM
+
 ## 0.3.1
 * Updated CSS for compatibility with Shadow DOM
 * Tweaked colours of invisibles / indent guide / wrap guide to suite editor background
