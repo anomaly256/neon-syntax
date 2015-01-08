@@ -1,4 +1,4 @@
-## 0.3.2
+## 0.3.3
 * Fix issue with text selection when using Shadow DOM
 
 ## 0.3.1
