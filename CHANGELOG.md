@@ -1,3 +1,6 @@
+## 0.3.4
+* More updates to CSS for clarity and compatibility with Shadow DOM changes, thanks @Psylocybit
+
 ## 0.3.3
 * Fix issue with text selection when using Shadow DOM
 
