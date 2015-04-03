@@ -1,3 +1,6 @@
+## 0.3.5
+* Move stylesheets/ directory to styles/ directory as per current Atom syntax theme documentation, thanks @zimme
+
 ## 0.3.4
 * More updates to CSS for clarity and compatibility with Shadow DOM changes, thanks @Psylocybit
 
