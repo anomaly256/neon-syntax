@@ -1,3 +1,6 @@
+## 0.3.6
+* Fix bracket matching, thanks @reverendj1
+
 ## 0.3.5
 * Move stylesheets/ directory to styles/ directory as per current Atom syntax theme documentation, thanks @zimme
 
