@@ -1,6 +1,6 @@
 @import "syntax-variables";
 
-atom-text-editor, :host {
+atom-text-editor,atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
   -webkit-filter: contrast(@contrast);
@@ -34,17 +34,17 @@ atom-text-editor, :host {
     }
   }
 
-  .search-results .marker .region {
+  .search-results .syntax--marker .region {
     background-color: transparent;
     border: @syntax-result-marker-color;
   }
 
-  .search-results .marker.current-result .region {
+  .search-results .syntax--marker.current-result .region {
     border: @syntax-result-marker-color-selected;
   }
 }
 
-atom-text-editor.is-focused, :host {
+atom-text-editor.is-focused,atom-text-editor {
   .cursor {
     border-color: @syntax-cursor-color;
   }
@@ -63,167 +63,167 @@ atom-text-editor.is-focused, :host {
   z-index: 100;
 }
 
-.comment {
+.syntax--comment {
   font-weight: bold;
   font-style: italic;
   color: #a1784c;
   text-shadow: 0px 0px @blur rgba(161, 120, 76, @opacity);
 }
 
-.string {
+.syntax--string {
   color: rgba(170, 175, 235, 0.93);
   text-shadow: 0px 0px @blur rgba(170, 175, 219, @opacity);
 }
 
-.constant.numeric {
+.syntax--constant.syntax--numeric {
   color: rgba(143, 194, 187, 0.73);
   text-shadow: 0px 0px @blur rgba(119, 194, 187, @opacity);
 }
 
-.constant.character, .constant.other {
+.syntax--constant.syntax--character, .syntax--constant.syntax--other {
   color: rgba(34, 255, 153, 0.87);
   text-shadow: 0px 0px @blur rgba(34, 200, 153, @opacity);
 }
 
-.constant.language {
+.syntax--constant.syntax--language {
   color: #bDbe82;
   text-shadow: 0px 0px @blur rgba(189, 190, 130, @opacity);
 }
 
-.storage {
+.syntax--storage {
   color: rgba(139, 108, 207, 1);
   text-shadow: 0px 0px @blur rgba(139, 93, 223, @opacity);
 }
 
-.meta.function-call {
+.syntax--meta.syntax--function-call {
   color: rgba(203, 175, 108, 1);
   text-shadow: 0px 0px @blur rgba(203, 175, 108, @opacity);
 }
 
-.support.function {
+.syntax--support.syntax--function {
   color: #ADAeB2;
   text-shadow: 0px 0px @blur rgba(189, 190, 130, @opacity);
 }
 
-.variable.other.external-symbol {
+.syntax--variable.syntax--other.external-symbol {
   color: #BBDFDD;
   text-shadow: 0px 0px @blur rgba(187, 223, 221, @opacity);
 }
 
-.variable.language, .variable.other {
+.syntax--variable.syntax--language, .syntax--variable.syntax--other {
   color: #3aafff;
   text-shadow: 0px 0px @blur rgba(58, 175, 255, @opacity);
 }
 
-.variable.parameter {
+.syntax--variable.syntax--parameter {
   color: #33b6a9;
   text-shadow: 0px 0px @blur rgba(5, 214, 249, @opacity);
 }
 
-.keyword {
+.syntax--keyword {
   color: #bB7Dbf;
   text-shadow: 0px 0px @blur rgba(155, 159, 253, @opacity);
 }
 
-.entity {
-  &.name.type {
+.syntax--entity {
+  &.syntax--name.syntax--type {
     color: rgba(175, 119, 169, 0.93);
     text-shadow: 0px 0px @blur rgba(175, 119, 169, @opacity);
   }
 
-  &.name.class {
+  &.syntax--name.syntax--class {
     color: #B998DF;
     text-shadow: 0px 0px @blur rgba(185, 152, 223, @opacity);
   }
 
-  &.name.structure {
+  &.syntax--name.syntax--structure {
     color: rgba(34, 255, 153, 0.87);
     text-shadow: 0px 0px @blur rgba(185, 152, 223, @opacity);
   }
 
-  &.name.tag {
+  &.syntax--name.syntax--tag {
     color: #49a6d2;
     text-shadow: 0px 0px @blur rgba(73, 166, 210, @opacity);
   }
 
-  &.name.function {
+  &.syntax--name.syntax--function {
     color: rgba(18, 255, 169, 0.97);
     text-shadow: 0px 0px @blur rgba(34, 255, 169, @opacity);
   }
 
-  &.name.function.io {
+  &.syntax--name.syntax--function.syntax--io {
     color: #DFB3AC;
     text-shadow: 0px 0px @blur rgba(223, 179, 172, @opacity);
   }
 
-  &.name.function.misc {
+  &.syntax--name.syntax--function.syntax--misc {
     color: #E3E4A9;
     text-shadow: 0px 0px @blur rgba(227, 228, 169, @opacity);
   }
 
-  &.name.function.predicate {
+  &.syntax--name.syntax--function.syntax--predicate {
     color: #A5DF93;
     text-shadow: 0px 0px @blur rgba(165, 223, 147, @opacity);
   }
 
-  &.other.attribute-name {
+  &.syntax--other.syntax--attribute-name {
     color: rgba(73, 134, 194, 0.8);
     text-shadow: 0px 0px @blur rgba(73, 134, 194, @opacity);
   }
 }
 
-.meta.class, .entity.name.class, .entity.name.type.class {
+.syntax--meta.syntax--class, .syntax--entity.syntax--name.syntax--class, .syntax--entity.syntax--name.syntax--type.syntax--class {
   color: #ff4377;
   text-shadow: 0px 0px @blur rgba(255, 51, 153, @opacity);
 }
 
-.support.class {
+.syntax--support.syntax--class {
   color: rgba(239, 106, 167, 0.87);
   text-shadow: 0px 0px @blur rgba(239, 106, 167, @opacity);
 }
 
-.invalid {
+.syntax--invalid {
   color: #DFDFD5;
   text-shadow: 0px 0px @blur #CC1B27;
 }
 
-.string .source {
+.syntax--string .syntax--source {
   font-style: italic;
   color: rgba(51, 153, 255, 1);
   text-shadow: 0px 0px @blur rgba(0, 153, 255, @opacity);
 }
 
-.entity.name.tag {
+.syntax--entity.syntax--name.syntax--tag {
   color: #49a6d2;
   text-shadow: 0px 0px @blur rgba(73, 166, 210, @opacity);
 }
 
-.markup.heading {
+.syntax--markup.syntax--heading {
   font-weight: bold;
   color: rgba(18, 255, 169, 0.97);
   text-shadow: 0px 0px @blur rgba(34, 255, 169, @opacity);
 }
 
-.markup.italic {
+.syntax--markup.syntax--italic {
   font-style: italic;
   color: #bB7Dbf;
   text-shadow: 0px 0px @blur rgba(155, 169, 253, @opacity);
 }
 
-.markup.bold {
+.syntax--markup.syntax--bold {
   font-weight: bold;
   color: #bB7Dbf;
   text-shadow: 0px 0px @blur rgba(155, 169, 253, @opacity);
 }
 
-.markup.underline {
+.syntax--markup.syntax--underline {
   text-decoration: underline;
   color: rgba(139, 108, 207, 1);
   text-shadow: 0px 0px @blur rgba(139, 93, 223, @opacity);
 }
 
-.gfm {
-  .link .entity {
+.syntax--gfm {
+  .syntax--link .syntax--entity {
     text-decoration: underline;
     color: #3aafff;
     text-shadow: 0px 0px @blur rgba(58, 175, 255, @opacity);
