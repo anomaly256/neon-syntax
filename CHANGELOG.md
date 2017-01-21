@@ -1,3 +1,6 @@
+## 0.3.7
+* Update atom-text-editor elements in base.less, thanks @YouKnowBagu
+
 ## 0.3.6
 * Fix bracket matching, thanks @reverendj1
 
